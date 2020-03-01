@@ -14,9 +14,9 @@
   "author": "krishna teja",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Teja-09/Basic-Flask/issues"
+    "url": "https://github.com/Teja-09/PoliticalNews_Scraper/issues"
   },
-  "homepage": "https://github.com/Teja-09/Basic-Flask#readme",
+  "homepage": "https://github.com/Teja-09/PoliticalNews_Scraper#readme",
   "dependencies": {
     "bulma": "^0.8.0"
   }
