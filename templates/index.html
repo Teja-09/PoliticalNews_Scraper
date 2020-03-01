@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Political News</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Aladin&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        h1
+        {
+            font-family: 'Aladin';
+        }
+
+
+        .table {
+            width: 75%;
+            margin-left: 14%;
+        }
+
+        body
+        {
+            padding-bottom: 4rem;
+        }
+
+        p
+        {
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="table-container">
+        <br>
+        <h1 class="title has-text-centered is-size-1">Welcome to the Political News.</h1>
+        <table class="table is-bordered is-striped is-narrow is-hoverable ">
+            <!-- Your table content -->
+            <tr>
+                <th>Date</th>
+                <th>Headline</th>
+                <th>Summary</th>
+            </tr>
+            {% for date, headline, summary in dataset %}
+            <tr>
+                <td> {{ date }} </th>
+                <td> {{ headline }} </td>
+                <td> {{ summary }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <p class="has-text-centered is-size-5">Website Scraped is <a href="https://www.livemint.com/elections"><strong>Political elections</strong></a></P>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "flask app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lets",
+    "do",
+    "it"
+  ],
+  "author": "krishna teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teja-09/Basic-Flask/issues"
+  },
+  "homepage": "https://github.com/Teja-09/Basic-Flask#readme",
+  "dependencies": {
+    "bulma": "^0.8.0"
+  }
+}
