@@ -3,6 +3,6 @@
 ### Framework
 + Flask
 
-#### Libraries used
+#### Libraries
 + BeautifulSoup4 
 + Urllib3
