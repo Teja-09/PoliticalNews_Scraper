@@ -1,5 +1,8 @@
 # Political News Web Scraper
+
+### Framework
++ Flask
+
 #### Libraries used
-+ Flask 
 + BeautifulSoup4 
 + Urllib3
