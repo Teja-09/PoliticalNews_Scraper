@@ -18,13 +18,11 @@ def home():
     # name_box = soup.find_all(lambda tag: (tag.name == 'h1' or tag.name == 'h2') and tag['class'] == ['headline'])
     # name_box = soup.find_all(re.compile(r'(h2|h1)'))
     name_box = soup.find_all(['h1', 'h2'], attrs={'class':'headline'})
-    print(len(name_box))
     for i in range(len(name_box)):
         name_box[i] = name_box[i].text
 
     # Extracting date and Time of posted
     dateTime = soup.find_all('span', attrs={'data-sectionname': 'Elections 2019'})
-    print(len(dateTime))
     for i in range(len(dateTime)):
         dateTime[i] = dateTime[i].text
 
@@ -43,8 +41,6 @@ def home():
     finalData = []
     for i in range(len(name_box)):
         finalData.append((dateTime[i], name_box[i], textlist[i]))
-        print(finalData[i])
-        print()
 
     with open('index.csv', 'w') as csv_file:
         writer = csv.writer(csv_file)
